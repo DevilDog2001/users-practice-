@@ -1,0 +1,13 @@
+insert into users (first_name,last_name,email) values ("Richardson","Antoine","richardsonantoine2001@gmail.com");
+insert into users (first_name,last_name,email) values ("cobert","Buckly","RobertBuckly1000@gmail.com");
+insert into users (first_name,last_name,email) values ("zohan","Charles","RohanCharles3000@gmail.com");
+select * from users;
+select * from users where email = "richardsonantoine2001@gmail.com";
+select * from users where id = 3;
+set SQL_SAFE_UPDATES = 0;
+update users set last_name = "Pancakes"  where  first_name = "Robert" ;
+select * from users where id = 2;
+delete from users where id = 2;
+select * from users;
+select * from users order by first_name ASC;
+select * from users order by first_name desc;
